@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Procesdocument – Lost in Translation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Inter font toevoegen -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen p-8 bg-gradient-to-br from-green-500 to-cyan-500">
+
+<!-- Home knop -->
+<div class="mb-6">
+  <a href="PRTT_LIT_TottaS.html" class="px-4 py-2 bg-white text-green-700 border-2 border-green-700 rounded hover:bg-green-50 transition">
+    Home
+  </a>
+</div>
+
+<main class="w-full max-w-5xl mx-auto flex flex-col gap-10">
+
+<!-- Week 10 -->
+<section class="bg-white rounded-2xl shadow-lg p-8">
+
+  <!-- Hoofdtitel -->
+  <h2 class="text-4xl font-bold mb-6">Week 13 - Finale GSM scherm in FIGMA</h2>
+
+  <!-- Inleiding -->
+  <div class="mb-6">
+    <h3 class="text-lg font-semibold mb-2 text-[#007B7B]">Inleiding</h3>
+    <p class="text-base leading-relaxed">
+Tijdens deze week heb ik de feedback van de vorige les verwerkt. Het doel was om deze feedback toe te passen en zo tot een finale versie van de app te komen.
+    </p>
+  </div>
+
+  <!-- Doel van de week -->
+  <div class="mb-6">
+    <h3 class="text-lg font-semibold mb-2 text-[#007B7B]">Doel van de week</h3>
+    <ul class="list-disc list-inside text-base leading-relaxed">
+Het afronden van een finale versie van de app die klaar is voor indiening.    </ul>
+  </div>
+
+  <!-- Uitgevoerde activiteiten -->
+  <div class="mb-6">
+    <h3 class="text-lg font-semibold mb-2 text-[#007B7B]">Uitgevoerde activiteiten</h3>
+    <p class="text-base leading-relaxed mb-4">
+Voor de tweede feedbackverwerking ben ik gestart met het toevoegen van extra tussenstappen in het aankoopproces van een ticket. Bij het afrekenen kan de gebruiker nu Apple Pay selecteren. Daarna volgt een Face ID-stap, inclusief een bevestigingsscherm waarin wordt gecontroleerd of de Face ID correct is uitgevoerd. Dit maakt het betaalproces realistischer en duidelijker.
+    </p>
+      <p class="text-base leading-relaxed mb-4">
+Daarnaast heb ik een extra scherm toegevoegd waarin de gebruiker een station en perron kan kiezen. Voor gebruikers die net zijn ingelogd, heb ik ook het Apple-toetsenbord en het bijhorende toetsenborddisplay toegevoegd op het beginscherm. Dit verhoogt de realistische uitstraling van de app.  </p>
+      <p class="text-base leading-relaxed mb-4">
+Ik heb ook een zoekfunctie toegevoegd aan het overzichtsscherm. Deze brengt de gebruiker naar de routeplanner. Binnen deze routeplanner heb ik een storing tussen twee locaties toegevoegd om realistische situaties te simuleren.
+      <p class="text-base leading-relaxed mb-4">
+Alle schermen zijn met elkaar verbonden zodat er een duidelijke en logische flow ontstaat. Op die manier kon ik een share-link aanmaken met een correcte volgorde en overgangen tussen de schermen.
+
+
+      <div class="flex justify-center mb-12">
+  <img 
+    src="assets/img/PRTT_Treinschermen_TottaS.pdf"
+    alt="Start GSM schermen" 
+    class="transition-transform duration-300 transform hover:scale-110"
+    style="width: 600px; height: auto;"
+     >
+</div>
+
+  <!-- Reflectie -->
+  <div class="mb-6">
+    <h3 class="text-lg font-semibold mb-2 text-[#007B7B]">Reflectie</h3>
+    <p class="text-base leading-relaxed">
+Ik heb een volledig en afgewerkt geheel kunnen realiseren dat klaar is voor indiening. De laatste aanpassingen bestonden vooral uit details en kleine verbeteringen die tijdens de les werden aangehaald, zoals een betalingssysteem en realistische toetsenborden. Deze elementen maken de app geloofwaardiger en zorgen voor een professionelere eindafwerking.    </p>
+  </div>
+
+
+
+<!-- Terug naar boven knop -->
+<div id="backToTop" class="fixed bottom-8 left-1/2 transform -translate-x-1/2 hidden">
+  <a href="#top"
+     class="px-6 py-3 bg-blue-800 text-white border-2 border-blue-800 rounded-2xl hover:bg-blue-700 transition transform hover:scale-105">
+    Terug naar boven
+  </a>
+</div>
+
+<!-- Footer -->
+<footer class="mt-16 bg-white rounded-2xl shadow-lg max-w-5xl mx-auto p-6">
+  <div class="flex justify-between items-center text-sm text-gray-600">
+    <p>Lost in Translation</p>
+    <p>Sabrina Totta – 1GDM2</p>
+  </div>
+</footer>
+
+<script>
+  const backToTop = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', () => {
+    // Bereken of we bijna onderaan de pagina zijn
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const pageHeight = document.documentElement.scrollHeight;
+
+    if (scrollPosition > pageHeight - 200) { // 200px vanaf onderkant
+      backToTop.classList.remove('hidden');
+    } else {
+      backToTop.classList.add('hidden');
+    }
+  });
+</script>
